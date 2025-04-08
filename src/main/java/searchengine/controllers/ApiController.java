@@ -14,7 +14,6 @@ import searchengine.services.StatisticsService;
 @RequestMapping("/api")
 @RequiredArgsConstructor
 public class ApiController {
-
     private final StatisticsService statisticsService;
     private final SitesList sitesList;
 
