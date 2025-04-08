@@ -7,7 +7,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class Site {
+public class SiteConfig {
     private String url;
     private String name;
 }

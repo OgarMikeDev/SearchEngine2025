@@ -2,8 +2,6 @@ package searchengine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import searchengine.config.Site;
-import searchengine.config.SitesList;
 
 @SpringBootApplication
 public class Application {

@@ -5,7 +5,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import searchengine.config.Site;
+import searchengine.config.SiteConfig;
 import searchengine.config.SitesList;
 import searchengine.dto.statistics.StatisticsResponse;
 import searchengine.services.StatisticsService;
@@ -24,8 +24,8 @@ public class ApiController {
 
     @RequestMapping("/startIndexing")
     public void startIndexing() {
-        for (Site currentSiteConfig : sitesList.getSites()) {
-            System.out.println("Текущий сайт с файла конфигурации: " + currentSiteConfig);
+        for (SiteConfig currentSiteConfigConfig : sitesList.getSites()) {
+            System.out.println("Текущий сайт с файла конфигурации: " + currentSiteConfigConfig);
         }
     }
 }
