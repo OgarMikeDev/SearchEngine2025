@@ -5,7 +5,7 @@ indexing-settings:
     - url: https://www.lenta.ru
       name: Лента.ру
     - url: https://www.skillbox.ru
-      name: Skillbox
+      name: Skillbox.ru
     - url: https://www.playback.ru
       name: PlayBack.Ru
 server:
