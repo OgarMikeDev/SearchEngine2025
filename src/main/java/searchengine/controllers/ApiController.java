@@ -46,10 +46,10 @@ public class ApiController {
                 fileWriter.write(strHtmlCurrentPage);
 
                 Elements elements = document.select(".menu__nav-link._is-extra");
-                for (int numberCurrentPage = 0; numberCurrentPage < 10; numberCurrentPage++) {
+                for (int numberCurrentPage = 0; numberCurrentPage < elements.size(); numberCurrentPage++) {
                     Element currentElement = elements.get(numberCurrentPage);
                     String strCurrentElement = String.valueOf(currentElement);
-                    goTheLinksPages(urlCurrentSite, nameCurrentSite, strCurrentElement, numberCurrentPage);
+                    goTheLinksPages(urlCurrentSite, nameCurrentSite, strCurrentElement, (numberCurrentPage + 1));
                 }
             } catch (Exception ex) {
                 ex.getMessage();
@@ -58,6 +58,7 @@ public class ApiController {
     }
 
     public void goTheLinksPages(String currentUrl, String nameCurrentSite, String strCurrentElement, int numberCurrentPage) {
+
         try {
             String template = "href=\"";
             int leftIndex = strCurrentElement.indexOf(template);
